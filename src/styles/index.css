@@ -9,3 +9,102 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.semaforito {
+    justify-content: center;
+    display: grid;
+    align-items: center;
+}
+
+.barrita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    width: 10px;
+    height:200px;
+    padding: 10px;
+  }
+.traffic-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    width: 100px;
+}
+
+  .light {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    background: gray;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .add-purple-btn {
+    margin-top: 15px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    background-color: #afafaf;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 50%;
+
+  }
+  
+  .add-purple-btn:hover {
+    background-color: #9001f7;
+    color: #ffffff;
+    border-radius: 50%;
+
+  }
+
+  /* Estado base (apagado): luz gris y baja opacidad */
+.light {
+	opacity: 0.7;
+	transition: opacity 0.4s ease, background-color 0.4s ease;
+}
+
+/* Encendidas con animación de parpadeo */
+.light.red.active {
+	background-color: red;
+	opacity: 1;
+  box-shadow: 0 0 25px white;
+	animation: blink 0.8s ease;
+}
+
+.light.yellow.active {
+	background-color: yellow;
+  box-shadow: 0 0 25px white;
+	opacity: 1;
+	animation: blink 0.8s ease;
+}
+
+.light.green.active {
+	background-color: greenyellow;
+  box-shadow: 0 0 25px white;
+	opacity: 1;
+	animation: blink 0.8s ease;
+}
+
+.light.purple.active {
+	background-color: purple;
+  box-shadow: 0 0 25px white;
+	opacity: 1;
+	animation: blink 0.8s ease;
+}
